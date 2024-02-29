@@ -27,7 +27,7 @@ class TodoModel {
     return {
       'title': title,
       'description': description,
-      'isDone': isDone,
+      'isDone': isDone ? 1 : 0,
       'createdAt': createdAt?.toIso8601String(),
     };
   }
